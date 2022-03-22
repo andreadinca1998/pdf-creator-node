@@ -1,10 +1,10 @@
 # Follow these steps to convert HTML to PDF
 
 N.B. modify index.js in this way to get page numeration:
----// Compiles a template
----var html = Handlebars.compile(document.html)(document.data);
----var newHtml = html.replace("pageCounter", "{{page}} di {{pages}}")
----var pdfPromise = pdf.create(newHtml, options);
+---// Compiles a template\n
+---var html = Handlebars.compile(document.html)(document.data);\n
+---var newHtml = html.replace("pageCounter", "{{page}} di {{pages}}")\n
+---var pdfPromise = pdf.create(newHtml, options);\n
 
 - Step 1 - install the pdf creator package using the following command
 
